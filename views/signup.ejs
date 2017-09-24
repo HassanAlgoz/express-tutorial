@@ -1,0 +1,41 @@
+	<% include ./partials/head.ejs %>
+	<title>Signup</title>
+	<!-- <link rel="stylesheet" href="/css/signup.css"> -->
+</head>
+<body>
+	<% include ./partials/navbar.ejs %>
+	<div class="container">	
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<h1>Signup</h1>
+				<form method="POST">
+					<div class="form-group">
+						<input type="email" name='email' placeholder='Email' class="form-control" required autofocus>
+					</div>
+					<div class="form-group">
+						<input type="password" name='password' placeholder='Password' class="form-control" required>
+					</div>
+					<div class="form-group">
+						<input type="text" name='nickname' placeholder='nickname' class="form-control" maxlength="25" required>
+					</div>
+					<div class="form-group">
+						<input type="number" name='age' placeholder='age' class="form-control" pattern="[1-9]?[0-9]" maxlength="2" min="0">
+					</div>
+					<div class="form-group">
+						<label for="role">Role</label>
+						<select name="role" id="role">
+							<option value="member">Member</option>
+							<option value="author">Author</option>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-success">Signup</button>
+				</form>
+				<h5>Or <a href="/auth/login">Login</a></h5>
+			</div>
+		</div>
+	</div>
+
+	<% include ./partials/footer.ejs %>
+	<!-- <script src="/js/signup.js"></script> -->
+</body>
+</html>

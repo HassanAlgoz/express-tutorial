@@ -1,0 +1,14 @@
+    <% include ./partials/head.ejs %>
+    <title>Member</title>
+</head>
+<body>
+    <% include ./partials/navbar.ejs %>
+    <h1>Member Page</h1>
+    <ul>
+        <li>nickname: <%= user.nickname %></li>
+        <li>age: <%= user.age %></li>
+        <li>email: <%= user.email %></li>
+        <li>_id: <%= user._id %></li>
+    </ul>
+</body>
+</html>
