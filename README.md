@@ -30,5 +30,5 @@ res.render('person', {
 
 ## Includes
 ```xml
-<% include ./navbar.ejs %>
+<% include ./partials/navbar.ejs %>
 ```
